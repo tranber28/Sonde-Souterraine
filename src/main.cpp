@@ -29,9 +29,9 @@ const lmic_pinmap lmic_pins = {
 };
 
 // ─── IDENTIFIANTS CHIRPSTACK (LSB/MSB configurés) ───
-static const u1_t PROGMEM DEVEUI[8]  = { 0xa8, 0x52, 0x6f, 0x34, 0x31, 0x60, 0xb4, 0x5c };
+static const u1_t PROGMEM DEVEUI[8]  = { 000000000000000 };
 static const u1_t PROGMEM APPEUI[8]  = { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 };
-static const u1_t PROGMEM APPKEY[16] = { 0x2c, 0x45, 0xb9, 0x7e, 0x77, 0x47, 0x94, 0x6f, 0x97, 0xce, 0xbc, 0x1d, 0x0e, 0xac, 0x5f, 0x12 };
+static const u1_t PROGMEM APPKEY[16] = { 000000000000000000000 };
 
 void os_getArtEui (u1_t* buf) { memcpy_P(buf, APPEUI, 8); }
 void os_getDevEui (u1_t* buf) { memcpy_P(buf, DEVEUI, 8); }
