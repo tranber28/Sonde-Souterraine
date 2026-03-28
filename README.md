@@ -114,7 +114,7 @@ framework = arduino
 
 Les clés OTAA (`DEVEUI`, `APPEUI`, `APPKEY`) sont définies dans `main.cpp` en format **LSB** pour DEVEUI/APPEUI et **MSB** pour APPKEY, conformément à la convention LMIC.
 
-> ⚠️ Ne pas committer les clés en clair dans un dépôt public. Passer par des `#define` dans un fichier `secrets.h` ignoré par `.gitignore`.
+
 
 ---
 
